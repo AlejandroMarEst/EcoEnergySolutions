@@ -19,7 +19,7 @@ namespace EcoEnergySolutions
             SimulationNumber++;
         }
         public double EnergyCalculation() => Math.Round(Math.Pow(WindVelocity, 3) * 0.2, 2);
-        public bool CheckParameter(double windVelocity) => windVelocity >= 5;
+        public bool CheckParameter(double energyMethod) => energyMethod >= 5;
         public string ShowSimulation()
         {
             return $"\n\t\t{SimulationNumber}\t\t\t{Type}\t\t\t{Energy}\t\t\t{Date}\t";

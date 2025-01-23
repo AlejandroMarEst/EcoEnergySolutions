@@ -19,7 +19,7 @@ namespace EcoEnergySolutions
             SimulationNumber++;
         }
         public double EnergyCalculation() => Math.Round(WaterLevel * 9.8 * 0.8, 2);
-        public bool CheckParameter(double waterLevel) => waterLevel >= 20;
+        public bool CheckParameter(double energyMethod) => energyMethod >= 20;
         public string ShowSimulation()
         {
             return $"\n\t\t{SimulationNumber}\t\t\t{Type}\t\t{Energy}\t\t\t{Date}\t";
