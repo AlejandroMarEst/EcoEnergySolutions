@@ -22,7 +22,7 @@ namespace EcoEnergySolutions
                     case 1:
                         if (EnergySystem.SimulationNumber == 0) 
                         {
-                            Console.WriteLine("MaxSimulations");
+                            Console.WriteLine(MaxSimulations);
                             maxSimulations = MethodLibrary.GetNumberFromUser(); 
                         }
                         if (EnergySystem.SimulationNumber < maxSimulations)
@@ -30,7 +30,7 @@ namespace EcoEnergySolutions
                             Console.WriteLine(WhatEnergy);
                             energyType = MethodLibrary.GetNumberFromUser();
                             energyFormQuantity = MethodLibrary.GetEnergyQuantity(energyType);
-                            simulationList += MethodLibrary.NewSimulation(ref simulationList, energyType, energyFormQuantity);
+                            simulationList += MethodLibrary.NewSimulation(energyType, energyFormQuantity);
                         }
                         else { Console.WriteLine(LimitSimulation); }
                         break;

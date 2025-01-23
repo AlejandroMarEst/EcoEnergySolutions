@@ -1,9 +1,11 @@
-﻿C:\Users\isard\source\repos\EcoEnergySolutions\ICalculEnergia.cs
+﻿C:\Users\isard\source\repos\EcoEnergySolutions\EnergySystem.cs
+C:\Users\isard\source\repos\EcoEnergySolutions\EolicSystem.cs
+C:\Users\isard\source\repos\EcoEnergySolutions\HydroElectricSystem.cs
+C:\Users\isard\source\repos\EcoEnergySolutions\IEnergyCalculation.cs
+C:\Users\isard\source\repos\EcoEnergySolutions\MethodLibrary.cs
 C:\Users\isard\source\repos\EcoEnergySolutions\Program.cs
-C:\Users\isard\source\repos\EcoEnergySolutions\SistemaEnergia.cs
-C:\Users\isard\source\repos\EcoEnergySolutions\SistemaEolic.cs
-C:\Users\isard\source\repos\EcoEnergySolutions\SistemaHidroelectric.cs
-C:\Users\isard\source\repos\EcoEnergySolutions\SistemaSolar.cs
+C:\Users\isard\source\repos\EcoEnergySolutions\SolarSystem.cs
+C:\Users\isard\source\repos\EcoEnergySolutions\.editorconfig
 C:\Users\isard\source\repos\EcoEnergySolutions\.gitattributes
 C:\Users\isard\source\repos\EcoEnergySolutions\.gitignore
 C:\Users\isard\source\repos\EcoEnergySolutions\ClassDiagram1.cd
