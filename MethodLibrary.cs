@@ -22,7 +22,6 @@ namespace EcoEnergySolutions
             const string Simulation = "to create a simulation";
             const string List = "to show the simulation list";
             const string Exit = "to exit";
-            const string Secret = "a secret option!";
             const string Invalid = "an invalid option";
             switch (selection)
             {
@@ -44,7 +43,7 @@ namespace EcoEnergySolutions
         {
             const string ErrorMsg = "Error: Introdueix un nombre vàlid.";
             bool isValidInput = false;
-            int number = 0;
+            int number;
             do
             {
                 string? input = Console.ReadLine();
@@ -79,10 +78,9 @@ namespace EcoEnergySolutions
                     return -1;
             }
         }
-        public static string NewSimulation(ref string simulationList, int energyType, int energyQuantity) 
+        public static string NewSimulation(int energyType, int energyQuantity) 
         {
             const string Invalid = "Energy Type";
-            bool Repeat = false;
             switch(energyType)
             {
                 case 1:
@@ -97,18 +95,7 @@ namespace EcoEnergySolutions
                 default:
                     Console.WriteLine(Invalid);
                     return "";
-                    break;
             }       
-        }
-        public static void ShowSimulationList()
-        {
-            for (int i = 0; i < EnergySystem.SimulationNumber; i++)
-            {
-                const string Table = "|\tSimulation Number\t|\tType\t\t|\tEnergy Produced\t\t|\t\tDate\t\t|";
-                const string Template = "|\t\t{0}\t\t |\t{1}\t |\t\t{2}\t\t |\t{3}\t |";
-                Console.WriteLine(Table);
-                Console.WriteLine(Template,EnergySystem.SimulationNumber);
-            }
         }
     }
 }
